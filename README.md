@@ -10,16 +10,16 @@ Create person view web component. It should be same element (HTML sintacs) with 
 
 Node.js sould be installed
 
-1. Download this repository.
-2. Open terminal in project folder
-3. Run dependencies installation
+- Download this repository.
+- Open terminal in project folder
+- Run dependencies installation
 ```sh
 npm install
 ```
 
-4. Run project with gulp
+- Run project with gulp
 ```sh
 gulp
 ```
 
-5. Go to: http://localhost:3000/
+- Go to: http://localhost:3000/
