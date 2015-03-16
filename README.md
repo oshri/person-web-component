@@ -8,8 +8,11 @@ Create a person view component as a same element (same HTML syntax) with differe
 
 ![Person view component](/design-spec.fw.png "Spec")
 
-### Technology
-Try to use existing elements in frameworks and to write minimum code. The project use a number of open source projects to work properly.
+Write as less code as possible, with focus on clean and reusable code. Try to take advantage from frameworks available below or add another familiar to you.
+The project use a number of open source projects to work properly.
+
+### Technologies
+
 * [Bootstrap] - UI boilerplate
 * [LESS] - CSS pre-processor
 * [AngularJS] - HTML enhanced for web apps
