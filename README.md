@@ -11,6 +11,17 @@ Create a person view component as a same element (same HTML syntax) with differe
 Write as less code as possible, with focus on clean and reusable code. Try to take advantage from frameworks available below or add another familiar to you.
 The project use a number of open source projects to work properly.
 
+**Example of person item data:**
+```json
+{
+    "image": "09811ea.jpg",
+    "fullName": "Roee Adler",
+    "position": "Chief Product Officer",
+    "company": "WeWork",
+    "summary": ""
+}
+```
+
 ### Technologies
 
 * [Bootstrap] - UI boilerplate
