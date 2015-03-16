@@ -1,6 +1,7 @@
 Task
 ===
 Create a person view component as a same element (same HTML syntax) with different scopes of view.
+
 1. **Large**
 2. **Medium**
 3. **Small**
@@ -18,9 +19,9 @@ Try to use existing elements in frameworks and to write minimum code. The projec
 
 ### How to run the project?
 
-Node.js sould be installed
+Node.js sould be installed.
 
-- Download this repository.
+- Download this repository
 - Open terminal in project folder
 - Run dependencies installation
 ```sh
