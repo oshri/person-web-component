@@ -9,28 +9,28 @@ var libs = [
     'bower_components/angular/angular.js',
     'bower_components/jquery/dist/jquery.js',
     'bower_components/bootstrap/dist/js/bootstrap.js'
-]
+];
 
 gulp.task('js:lib', function() {
     gulp.src(libs)
         .pipe(concat('lib.js'))
-        .pipe(gulp.dest('./public/js'));
+        .pipe(gulp.dest('./public/dist'));
 });
 
 gulp.task('js:app', function() {
-    gulp.src('public/js/app/**/*')
+    gulp.src('public/js/**/*')
         .pipe(concat('app.js'))
-        .pipe(gulp.dest('./public/js'))
+        .pipe(gulp.dest('./public/dist'))
         .pipe(livereload());
 });
 
 gulp.task('less', function() {
-    gulp.src('public/css/less/style.less')
+    gulp.src('public/less/style.less')
         .pipe(less({
             paths: [path.join(__dirname, 'less', 'includes')]
         }))
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('./public/css'))
+        .pipe(gulp.dest('./public/dist'))
         .pipe(livereload());
 });
 
@@ -45,8 +45,8 @@ gulp.task('connect', function() {
 // Rerun the task when a file changes
 gulp.task('watch', function() {
     livereload.listen();
-    gulp.watch('public/css/less/**/*.less', ['less']);
-    gulp.watch('public/js/app/**/*.js', ['js:app']);
+    gulp.watch('public/less/**/*.less', ['less']);
+    gulp.watch('public/js/**/*.js', ['js:app']);
 });
 
 // The default task (called when you run `gulp` from cli)
